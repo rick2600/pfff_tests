@@ -1,0 +1,13 @@
+[StmtList(
+   [ExprStmt(
+      Assign(IdVar(DName(("a", i_1)), Ref(NoScope)), i_2,
+        Sc(C(String(("static text", i_3))))), i_4);
+    ExprStmt(
+      Assign(IdVar(DName(("b", i_5)), Ref(NoScope)), i_6,
+        ArrayGet(IdVar(DName(("_GET", i_7)), Ref(NoScope)),
+          (i_8, Some(Sc(C(String(("var", i_9))))), i_10))), i_11);
+    ExprStmt(
+      Assign(IdVar(DName(("c", i_12)), Ref(NoScope)), i_13,
+        IdVar(DName(("b", i_14)), Ref(NoScope))), i_15);
+    Echo(i_16, [Left(IdVar(DName(("c", i_17)), Ref(NoScope)))], i_18);
+    EmptyStmt(i_19)]); FinalDef(i_20)]

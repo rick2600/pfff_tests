@@ -1,0 +1,13 @@
+[StmtList(
+   [ExprStmt(
+      Assign(IdVar(DName(("a", i_1)), Ref(NoScope)), i_2,
+        Sc(C(String(("abc", i_3))))), i_4);
+    ExprStmt(
+      Assign(IdVar(DName(("b", i_5)), Ref(NoScope)), i_6,
+        Sc(C(String(("cde", i_7))))), i_8);
+    Echo(i_9,
+      [Left(
+         Binary(IdVar(DName(("a", i_10)), Ref(NoScope)),
+           (BinaryConcat, i_11), IdVar(DName(("b", i_12)), Ref(NoScope))))],
+      i_13); EmptyStmt(i_14); InlineHtml(("
+", i_15))]); FinalDef(i_16)]

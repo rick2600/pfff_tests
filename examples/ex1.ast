@@ -1,0 +1,4 @@
+[StmtList(
+   [Echo(i_1, [Left(Sc(C(String(("Hello World", i_2)))))], i_3);
+    EmptyStmt(i_4); InlineHtml(("
+", i_5))]); FinalDef(i_6)]

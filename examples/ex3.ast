@@ -1,0 +1,8 @@
+[StmtList(
+   [ExprStmt(
+      Assign(IdVar(DName(("a", i_1)), Ref(NoScope)), i_2,
+        Binary(Sc(C(Int(("5", i_3)))), (Arith(Plus), i_4),
+          Sc(C(Int(("10", i_5)))))), i_6); EmptyStmt(i_7);
+    InlineHtml(("
+
+", i_8))]); FinalDef(i_9)]
