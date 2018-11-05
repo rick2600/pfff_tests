@@ -17,7 +17,9 @@ class PFFFLexer(object):
         'NODE',
         'LITERAL',
         'ID',
-        'SEMICOLON'
+        'SEMICOLON',
+        'LCURLY',
+        'RCURLY'
     )
 
     # Regular expression rules for simple tokens
@@ -27,6 +29,8 @@ class PFFFLexer(object):
     t_RPAREN            = r'\)'
     t_LBRACKET          = r'\['
     t_RBRACKET          = r'\]'
+    t_LCURLY            = r'{'
+    t_RCURLY            = r'}'
     t_COMMA             = r'\,'
     t_LITERAL           = r'"[^"]*"'
     t_ID                = r'i_\d+'

@@ -66,6 +66,7 @@ class ASTBuilder(object):
                 parents.append(parents[-1])
             elif t == 'RPAREN':
                 parents.pop()
+                
 
         return root
 
@@ -84,5 +85,10 @@ class ASTPrinter(object):
         for child in node.children:
             label1 = "%d %s" % (node.node_id, node.value)
             label2 = "%d %s" % (child.node_id, child.value)
+            g.node(label1)
+            
+            if len(child.children) == 0:
+                g.node(label2, shape='box', style='filled', fillcolor='lightblue2')
+            
             g.edge(label1, label2)
             self.build_graph(child, g)        
